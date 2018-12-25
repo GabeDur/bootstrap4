@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0, maximum-scale=1.0 minimum-scale=1.0"> --><!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<title>Ejercicios</title>
+	<link rel="stylesheet" href="css/basica2.css">
+	<style>
+	.contenido > div{
+		background: #bbb;
+		color: #fff;
+	}
+	header{
+		margin-top: 5px;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+	
+	
+		<!--header-->
+		<header class="row">
+			<div class="col">
+				<h1>Formulario</h1>
+				<hr>
+			</div>
+			
+		</header>
+		
+		<!--contenido-->
+		<section class="row contenido justify-content-around">
+			<div class="col py-2">
+				<form action="">
+					<div class="form-group row align-items-center">
+						<div class="col-md-6">
+							<label>Nombre(s)</label>
+							<input type="text" placeholder="Nombre(s)" name="nombre" id="nombre" class="form-control">
+							<label>Apelidos</label>
+							<input type="text" placeholder="Apellidos" name="apellidos" id="apellidos" class="form-control">
+						</div>
+						<div class="col-md-1">
+						</div>
+						<div class="col-md-5">
+							<label>Sexo: </label>
+							<div class="form-check">
+								<input type="radio" name="sexo" id="hombre" class="form-check-input">
+								<label class="form-check-label">Hombre</label>
+							</div>
+							<div class="form-check">
+								<input type="radio" name="sexo" id="mujer" class="form-check-input">
+								<label class="form-check-label">Mujer</label>
+							</div>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<div class="col-md-2">
+							<label>Curso (multiple) </label>
+							<select name="curso" id="curso" class="custom-select" multiple>
+								<option value="java">Java</option>
+								<option value="python">Python</option>
+								<option value="cplus">C++</option>
+							</select>
+						</div>
+						<div class="col-md-2">
+							<div class="form-group">
+								<label>Contraseña</label>
+								<input type="password" placeholder="****" name="pass" id="pass" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="form-group">
+								<label>Comentarios</label>
+								<textarea placeholder="Comentarios..." name="coment" id="coment" class="form-control"></textarea>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<h3 class="pl-3">Checkbox personalizado</h3>
+					</div>
+					<div class="form-check row">
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="remember">
+								<label class="custom-control-label" for="remember">Remember my preference</label>
+							</div>
+					</div>
+					<hr>
+					<div class="row">
+						<h3 class="pl-3">Radio button personalizado</h3>
+					</div>
+					<div class="form-check row">
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="mayorEdad" name="edad" class="custom-control-input">
+							<label for="mayorEdad" class="custom-control-label">Mayor de edad</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" class="custom-control-input" id="menorEdad" name="edad">
+							<label class="custom-control-label" for="menorEdad">Menor de edad</label>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+
+		<!--fooder-->
+		<footer class="row">
+			<div class="col">
+				<h5>Derechos reservados</h5>
+			</div>
+		</footer>
+		
+		
+		
+	</div>
+	
+	<!-- jQuery first, then Popper.js, then Bootstrap JS-->
+	<script src="js/jquery-3.3.1.min.js"></script> 
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap.min.js"></script> 
+	
+</body>
+</html>
