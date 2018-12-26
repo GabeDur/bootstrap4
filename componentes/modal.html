@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0, maximum-scale=1.0 minimum-scale=1.0"> --><!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<title>Ejercicios</title>
+	<link rel="stylesheet" href="../css/basica2.css">
+	<style>
+	.contenido > div{
+		background: #344545;
+	}
+	.cuerpo{
+		color: black;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		
+		<!--header-->
+		<header class="row">
+			<div class="col">
+				<h1>Modal</h1>
+			</div>
+		</header>
+	
+		<!--contenido
+		Para usar esta pagina es necesario el uso de jquery y bootstrap.js
+		-->
+		<div class="row cuerpo">
+			<div class="col">
+				<button class="btn btn-lg btn-warning" data-toggle="modal" data-target="#ventana">Mostrar modal-1</button>
+				<div class="modal" id="ventana" aria-labelledby="fm-modal" aria-hidden="true"> <!--esta es la ventana-->
+					<h1>Hola simple</h1>
+				</div>
+			</div>
+			<div class="col">
+				<button class="btn btn-lg btn-warning" data-toggle="modal" data-target="#ventana2">Mostrar modal-2</button>
+				<div class="modal fade" id="ventana2" aria-labelledby="fm-modal" aria-hidden="true"> <!--esta es la ventana-->
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<h3>Hola con div.modal-dialog y div.modal-content</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<button class="btn btn-lg btn-warning" data-toggle="modal" data-target="#ventana3">Mostrar modal-3</button>
+				<div class="modal fade" id="ventana3" aria-labelledby="fm-modal" aria-hidden="true"> <!--esta es la ventana-->
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h3 class="modal-title">Hola con header y close</h3>
+								<button class="close" data-dismiss="modal" aria-label="cerrar">
+									<span class="">&times;</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<button class="btn btn-lg btn-warning" data-toggle="modal" data-target="#ventana4">Mostrar modal-4</button>
+				<div class="modal fade" id="ventana4" aria-labelledby="fm-modal" aria-hidden="true"> <!--esta es la ventana-->
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h3 class="modal-title">Hola con modal avanzado</h3>
+								<button class="close" data-dismiss="modal" aria-label="cerrar">
+									<span class="">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<h3>Título</h3>
+								<p>A lightweight, flexible component that can optionally extend the entire viewport to showcase key marketing messages on your site.</p>
+							</div>
+							<div class="modal-footer alert-dark">
+								Copyright @
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!--Redes-->
+		<section class="row justify-content-around contenido mb-3 mt-3">
+			<div class="col-sm-5 card">
+				<div class="card-footer text-center">
+				<a href="#">facebook</a>
+				</div>
+			</div>
+			<div class="col-sm-5 card">
+				<div class="card-footer text-center ">
+				<a href="#">twitter</a>
+				</div>
+			</div>
+		</section>
+		
+		
+
+
+		<!--fooder-->
+		<footer class="row mt-3">
+			<div class="col">
+				<h5>Derechos reservados</h5>
+			</div>
+		</footer>
+		
+		
+		
+	</div>
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS-->
+	<script src="../js/jquery-3.3.1.min.js"></script> 
+	<script src="../js/popper.min.js"></script> 
+	<script src="../js/bootstrap.min.js"></script> 
+	
+	
+</body>
+</html>
